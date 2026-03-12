@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Ordering Food</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial;}
+nav{
+display:flex;justify-content:space-between;align-items:center;
+padding:20px 60px;color:white;position:absolute;width:100%;
+}
+nav h2{font-size:30px;}
+nav ul{display:flex;gap:30px;list-style:none;}
+.hero{
+height:90vh;
+background:url("https://images.unsplash.com/photo-1504674900247-0877df9cc836") center/cover;
+display:flex;flex-direction:column;justify-content:center;align-items:center;
+color:white;text-align:center;
+}
+.hero h1{font-size:55px;margin-bottom:20px;}
+.search{
+background:white;padding:15px;border-radius:10px;width:500px;
+display:flex;gap:10px;
+}
+.search input{flex:1;border:none;outline:none;}
+.search a{
+background:#e23744;color:white;padding:10px 20px;border-radius:8px;
+text-decoration:none;
+}
+.cards{
+display:flex;justify-content:center;gap:30px;padding:60px;flex-wrap:wrap;
+}
+.card{
+width:260px;background:white;border-radius:15px;overflow:hidden;
+box-shadow:0 10px 25px rgba(0,0,0,.1);transition:.3s;
+}
+.card:hover{transform:translateY(-10px);}
+.card img{width:100%;height:160px;object-fit:cover;}
+.card h3{padding:15px;}
+footer{background:#1c1c1c;color:white;text-align:center;padding:30px;}
+</style>
+</head>
+
+<body>
+
+<nav>
+<h2>Food</h2>
+<ul>
+<li>Login</li>
+<li>Sign Up</li>
+</ul>
+</nav>
+
+<section class="hero">
+<h1>Discover best food</h1>
+<div class="search">
+<input placeholder="Search restaurant">
+<a href="restaurants.html">Search</a>
+</div>
+</section>
+
+<section class="cards">
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3><a href="restaurants.html" style="text-decoration:none;color:black;">Order Online</a></h3>
+</div>
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+<h3>Dining</h3>
+
+</section>
+
+<footer>Welcome</footer>
+
+</body>
+</html>

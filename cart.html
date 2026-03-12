@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Cart</title>
+<style>
+body{font-family:Arial;background:#f4fff4;text-align:center;padding:80px;}
+.box{
+background:white;width:400px;margin:auto;padding:30px;
+border-radius:15px;box-shadow:0 10px 25px rgba(0,0,0,.15);
+}
+button{
+margin-top:20px;padding:14px 40px;background:#e23744;color:white;
+border:none;border-radius:30px;font-size:18px;
+}
+.success{
+display:none;margin-top:20px;color:green;font-size:22px;font-weight:bold;
+}
+#done:target{display:block;}
+</style>
+</head>
+
+<body>
+
+<div class="box">
+
+<h2>Your Selected Items</h2>
+<p>Items visible in URL (GET method concept)</p>
+
+<a href="#done"><button>Place Order</button></a>
+
+<div id="done" class="success">
+✅ Order Placed Successfully
+</div>
+
+</div>
+
+</body>
+</html>

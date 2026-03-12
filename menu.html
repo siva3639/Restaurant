@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Menu</title>
+<style>
+body{font-family:Arial;background:#fff5f5;padding:40px;}
+.grid{display:flex;gap:25px;flex-wrap:wrap;justify-content:center;}
+.card{
+width:220px;background:white;padding:15px;border-radius:12px;
+box-shadow:0 8px 20px rgba(0,0,0,.1);text-align:center;
+}
+.card img{width:100%;border-radius:10px;}
+label{
+display:block;margin-top:10px;background:#e23744;color:white;
+padding:8px;border-radius:20px;cursor:pointer;
+}
+.checkout{text-align:center;margin-top:40px;}
+button{
+padding:14px 40px;background:#2ed573;color:white;border:none;
+border-radius:30px;font-size:18px;
+}
+</style>
+</head>
+
+<body>
+
+<form action="cart.html">
+
+<div class="grid">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513104890138-7c749659a591">
+<h3>Pizza</h3>
+<p>₹299</p>
+<label><input type="checkbox" name="item" value="Pizza ₹299"> Add</label>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1550547660-d9450f859349">
+<h3>Burger</h3>
+<p>₹199</p>
+<label><input type="checkbox" name="item" value="Burger ₹199"> Add</label>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1529042410759-befb1204b468">
+<h3>Pasta</h3>
+<p>₹249</p>
+<label><input type="checkbox" name="item" value="Pasta ₹249"> Add</label>
+</div>
+
+</div>
+
+<div class="checkout">
+<button type="submit">Go To Cart</button>
+</div>
+
+</form>
+
+</body>
+</html>
